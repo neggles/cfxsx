@@ -17,7 +17,7 @@ build/cfxsx.kicad_pcb: cfxsx/cfxsx.kicad_pcb build
 	kikit panelize extractboard -s 135 50 30 62 $< $@
 
 build/cfxsx-2280.kicad_pcb: cfxsx/cfxsx-2280.kicad_pcb build
-	kikit panelize extractboard -s 135 50 30 62 $< $@
+	kikit panelize extractboard -s 135 50 30 100 $< $@
 
 build/cfxsx.sch: cfxsx/cfxsx.kicad_pcb build
 	cp cfxsx/cfxsx.sch $@
