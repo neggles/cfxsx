@@ -42,8 +42,8 @@ build/web: build
 build/web/index.html: build/web $(BOARDSFILES)
 	kikit present boardpage \
 		-d README.md \
-		--name "MXM 3.1 to PCIe x8 Adapter" \
-		-b "MXM 3.1 to PCIe x8 Adapter" "Board" build/cfxsx.kicad_pcb  \
+		--name "CFexpress to M.2 adapter" \
+		-b "CFexpress to M.2 adapter" "Board" build/cfxsx.kicad_pcb  \
 		-r "assets/cfxsx.png" \
 		-r "assets/cfxsx-bottom.png" \
 		-r "assets/cfxsx-top.png" \
