@@ -1,0 +1,71 @@
+# Created by https://www.toptal.com/developers/gitignore/api/kicad,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=kicad,visualstudiocode
+
+### KiCad ###
+# For PCBs designed using KiCad: http://www.kicad-pcb.org/
+# Format documentation: http://kicad-pcb.org/help/file-formats/
+
+# Temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.sch-bak
+*~
+_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+
+# Netlist files (exported from Eeschema)
+*.net
+
+# Autorouter files (exported from Pcbnew)
+*.dsn
+*.ses
+
+# Exported BOM files
+*.xml
+*.csv
+
+### KiCad Patch ###
+rescue-backup/
+
+*.tsv
+bom/
+
+# Gerber export output
+out/
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+# End of https://www.toptal.com/developers/gitignore/api/kicad,visualstudiocode
+
+# Build outputs
+build
+fab
+
+# MS Excel lock files
+.~lock.*
+
+# secrets
+.secrets
+
+# alternates
+kikit-docker-jlcfab.sh
+
+# logs
+*.log
+
+# local misc
+misc/

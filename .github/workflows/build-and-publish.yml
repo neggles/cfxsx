@@ -1,0 +1,32 @@
+name: build-and-publish
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-20.04
+    steps:
+      # checkout repo
+      - name: Checkout 🛎️
+        id: checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: 'recursive'
+
+      # build pages content with kikit docker
+      - name: Build 🔧
+        uses: docker://yaqwsx/kikit:latest
+        id: build
+        with:
+          entrypoint: "/bin/bash"
+          args: "-c make web"
+
+      # deploy
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build/web # The folder the action should deploy.

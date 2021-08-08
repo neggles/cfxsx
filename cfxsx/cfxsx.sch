@@ -1,0 +1,556 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "CFExpress to M.2 for Xbox Series X/S"
+Date "2021-08-08"
+Rev "1"
+Comp "neggl.es"
+Comment1 "Author: Andrew Powers-Holmes"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 1_My_Symbols:CFexpress_Media PC1
+U 1 1 610DA276
+P 3300 3250
+F 0 "PC1" H 3000 4500 50  0000 L CNN
+F 1 "CFexpress" H 3600 4500 50  0000 R CNN
+F 2 "11-My-Edits:CFExpress_Media" H 3800 2000 50  0001 C CNN
+F 3 "" H 3150 3400 50  0001 C CNN
+	1    3300 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR02
+U 1 1 610DEA0B
+P 4300 3150
+F 0 "#PWR02" H 4300 3000 50  0001 C CNN
+F 1 "+3V3" V 4315 3278 50  0000 L CNN
+F 2 "" H 4300 3150 50  0001 C CNN
+F 3 "" H 4300 3150 50  0001 C CNN
+	1    4300 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 4350 4250 4350
+Wire Wire Line
+	4250 4050 3750 4050
+Wire Wire Line
+	3750 3750 4250 3750
+Wire Wire Line
+	4300 3150 3750 3150
+Wire Wire Line
+	3750 2250 4150 2250
+Wire Wire Line
+	3750 2350 4150 2350
+Wire Wire Line
+	4250 3750 4250 4050
+Wire Wire Line
+	4250 4050 4250 4350
+Connection ~ 4250 4050
+Wire Wire Line
+	4250 4050 4300 4050
+$Comp
+L power:GND #PWR03
+U 1 1 610E4610
+P 4300 4050
+F 0 "#PWR03" H 4300 3800 50  0001 C CNN
+F 1 "GND" V 4305 3922 50  0000 R CNN
+F 2 "" H 4300 4050 50  0001 C CNN
+F 3 "" H 4300 4050 50  0001 C CNN
+	1    4300 4050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3750 2150 4250 2150
+Wire Wire Line
+	3750 3850 4150 3850
+Wire Wire Line
+	3750 3950 4150 3950
+Wire Wire Line
+	3750 4150 4150 4150
+Wire Wire Line
+	4150 4250 3750 4250
+Wire Wire Line
+	3750 3450 4150 3450
+Wire Wire Line
+	3750 3550 4150 3550
+Wire Wire Line
+	3750 3250 4150 3250
+Wire Wire Line
+	3750 3350 4150 3350
+Wire Wire Line
+	3750 3050 4150 3050
+Wire Wire Line
+	3750 2650 4150 2650
+Wire Wire Line
+	3750 2550 4150 2550
+Text Label 4150 3850 2    50   ~ 0
+PER0_N
+Text Label 4150 3950 2    50   ~ 0
+PER0_P
+Text Label 4150 4150 2    50   ~ 0
+PET0_N
+Text Label 4150 4250 2    50   ~ 0
+PET0_P
+Text Label 4150 2250 2    50   ~ 0
+PER1_N
+Text Label 4150 2350 2    50   ~ 0
+PER1_P
+Text Label 4150 2650 2    50   ~ 0
+PET1_P
+Text Label 4150 2550 2    50   ~ 0
+PET1_N
+$Comp
+L power:GND #PWR01
+U 1 1 610EDD00
+P 4300 2450
+F 0 "#PWR01" H 4300 2200 50  0001 C CNN
+F 1 "GND" V 4305 2322 50  0000 R CNN
+F 2 "" H 4300 2450 50  0001 C CNN
+F 3 "" H 4300 2450 50  0001 C CNN
+	1    4300 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3750 2450 4250 2450
+Wire Wire Line
+	4250 2450 4300 2450
+Text Label 4150 3050 2    50   ~ 0
+~PERST
+Text Label 4150 3550 2    50   ~ 0
+REFCLK+
+Text Label 4150 3450 2    50   ~ 0
+REFCLK-
+Text Label 4150 3250 2    50   ~ 0
+~CLK_REQ
+Text Label 4150 3350 2    50   ~ 0
+~INS
+Text Label 5300 4800 0    50   ~ 0
+~PERST
+Text Label 5300 4700 0    50   ~ 0
+~CLK_REQ
+Wire Wire Line
+	5300 4800 5700 4800
+Wire Wire Line
+	5700 4700 5300 4700
+Text Label 7150 2750 2    50   ~ 0
+~INS
+$Comp
+L power:GND #PWR04
+U 1 1 61139689
+P 6250 5350
+F 0 "#PWR04" H 6250 5100 50  0001 C CNN
+F 1 "GND" H 6250 5200 50  0000 C CNN
+F 2 "" H 6250 5350 50  0001 C CNN
+F 3 "" H 6250 5350 50  0001 C CNN
+	1    6250 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4400 5300 4400
+Wire Wire Line
+	5700 4500 5300 4500
+Text Label 5300 4500 0    50   ~ 0
+REFCLK+
+Text Label 5300 4400 0    50   ~ 0
+REFCLK-
+Wire Wire Line
+	5700 3850 5300 3850
+Wire Wire Line
+	5700 3950 5300 3950
+Text Label 5300 3850 0    50   ~ 0
+PER0_N
+Text Label 5300 3950 0    50   ~ 0
+PER0_P
+Wire Wire Line
+	5700 4100 5300 4100
+Wire Wire Line
+	5300 4200 5700 4200
+Text Label 5300 4100 0    50   ~ 0
+PET0_N
+Text Label 5300 4200 0    50   ~ 0
+PET0_P
+Wire Wire Line
+	5700 3300 5300 3300
+Wire Wire Line
+	5700 3400 5300 3400
+Text Label 5300 3300 0    50   ~ 0
+PER1_N
+Text Label 5300 3400 0    50   ~ 0
+PER1_P
+Wire Wire Line
+	5700 3650 5300 3650
+Wire Wire Line
+	5700 3550 5300 3550
+Text Label 5300 3650 0    50   ~ 0
+PET1_P
+Text Label 5300 3550 0    50   ~ 0
+PET1_N
+$Comp
+L Device:C_Small C3
+U 1 1 61191975
+P 8800 5250
+F 0 "C3" H 8708 5296 50  0000 R CNN
+F 1 "0.1u" H 8708 5205 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 8800 5250 50  0001 C CNN
+F 3 "~" H 8800 5250 50  0001 C CNN
+	1    8800 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 6119197B
+P 9000 5250
+F 0 "C4" H 9092 5296 50  0000 L CNN
+F 1 "10u" H 9092 5205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 9000 5250 50  0001 C CNN
+F 3 "~" H 9000 5250 50  0001 C CNN
+	1    9000 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 5050 8800 5150
+Wire Wire Line
+	9000 5050 9000 5150
+Wire Wire Line
+	8800 5350 8800 5450
+Wire Wire Line
+	9000 5450 9000 5350
+$Comp
+L power:+3V3 #PWR07
+U 1 1 611BD9AF
+P 8100 4950
+F 0 "#PWR07" H 8100 4800 50  0001 C CNN
+F 1 "+3V3" H 8100 5100 50  0000 C CNN
+F 2 "" H 8100 4950 50  0001 C CNN
+F 3 "" H 8100 4950 50  0001 C CNN
+	1    8100 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 611BD9B5
+P 8000 5250
+F 0 "C1" H 7908 5296 50  0000 R CNN
+F 1 "0.1u" H 7908 5205 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 8000 5250 50  0001 C CNN
+F 3 "~" H 8000 5250 50  0001 C CNN
+	1    8000 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 611BD9BB
+P 8200 5250
+F 0 "C2" H 8292 5296 50  0000 L CNN
+F 1 "10u" H 8292 5205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 8200 5250 50  0001 C CNN
+F 3 "~" H 8200 5250 50  0001 C CNN
+	1    8200 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 5050 8200 5150
+$Comp
+L power:GND #PWR08
+U 1 1 611BD9C3
+P 8100 5550
+F 0 "#PWR08" H 8100 5300 50  0001 C CNN
+F 1 "GND" H 8100 5400 50  0000 C CNN
+F 2 "" H 8100 5550 50  0001 C CNN
+F 3 "" H 8100 5550 50  0001 C CNN
+	1    8100 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 5450 8200 5350
+Wire Wire Line
+	8000 5450 8100 5450
+Wire Wire Line
+	8000 5350 8000 5450
+Wire Wire Line
+	8800 5050 8900 5050
+Wire Wire Line
+	8800 5450 8900 5450
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 61238EB7
+P 6250 1850
+F 0 "#PWR0101" H 6250 1700 50  0001 C CNN
+F 1 "+3V3" H 6250 2000 50  0000 C CNN
+F 2 "" H 6250 1850 50  0001 C CNN
+F 3 "" H 6250 1850 50  0001 C CNN
+	1    6250 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 5150 6350 5250
+Wire Wire Line
+	6350 5250 6250 5250
+Wire Wire Line
+	6250 5250 6250 5150
+Wire Wire Line
+	6250 5250 6250 5350
+Connection ~ 6250 5250
+NoConn ~ 5700 2550
+NoConn ~ 5700 2450
+NoConn ~ 5700 2300
+NoConn ~ 5700 2200
+NoConn ~ 5700 2750
+NoConn ~ 5700 2850
+NoConn ~ 5700 3000
+NoConn ~ 5700 3100
+NoConn ~ 5700 4900
+Wire Wire Line
+	6250 1850 6250 1950
+NoConn ~ 6800 3550
+NoConn ~ 6800 2550
+$Comp
+L power:GND #PWR0103
+U 1 1 6126E8FD
+P 4300 5600
+F 0 "#PWR0103" H 4300 5350 50  0001 C CNN
+F 1 "GND" H 4300 5450 50  0000 C CNN
+F 2 "" H 4300 5600 50  0001 C CNN
+F 3 "" H 4300 5600 50  0001 C CNN
+	1    4300 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 5550 4700 5600
+Wire Wire Line
+	4300 5550 4300 5600
+$Comp
+L power:+3V3 #PWR0104
+U 1 1 612815F5
+P 8900 4950
+F 0 "#PWR0104" H 8900 4800 50  0001 C CNN
+F 1 "+3V3" H 8900 5100 50  0000 C CNN
+F 2 "" H 8900 4950 50  0001 C CNN
+F 3 "" H 8900 4950 50  0001 C CNN
+	1    8900 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 612880DF
+P 8900 5550
+F 0 "#PWR0105" H 8900 5300 50  0001 C CNN
+F 1 "GND" H 8900 5400 50  0000 C CNN
+F 2 "" H 8900 5550 50  0001 C CNN
+F 3 "" H 8900 5550 50  0001 C CNN
+	1    8900 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 5050 8000 5150
+Wire Wire Line
+	8000 5050 8100 5050
+Wire Wire Line
+	8900 4950 8900 5050
+Connection ~ 8900 5050
+Wire Wire Line
+	8900 5050 9000 5050
+Wire Wire Line
+	8900 5450 8900 5550
+Connection ~ 8900 5450
+Wire Wire Line
+	8900 5450 9000 5450
+Wire Wire Line
+	8100 5450 8100 5550
+Connection ~ 8100 5450
+Wire Wire Line
+	8100 5450 8200 5450
+Wire Wire Line
+	8100 4950 8100 5050
+Connection ~ 8100 5050
+Wire Wire Line
+	8100 5050 8200 5050
+$Comp
+L power:GND #PWR0106
+U 1 1 612A64EF
+P 4700 5600
+F 0 "#PWR0106" H 4700 5350 50  0001 C CNN
+F 1 "GND" H 4700 5450 50  0000 C CNN
+F 2 "" H 4700 5600 50  0001 C CNN
+F 3 "" H 4700 5600 50  0001 C CNN
+	1    4700 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad MP1
+U 1 1 6126E1B5
+P 4300 5450
+F 0 "MP1" H 4300 5737 50  0000 C CNN
+F 1 "2230" H 4300 5646 50  0000 C CNN
+F 2 "11-My-Edits:MountingHole_NGFF_4.2mm_Pad_TopBottom" H 4300 5450 50  0001 C CNN
+F 3 "~" H 4300 5450 50  0001 C CNN
+	1    4300 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad MP2
+U 1 1 6126D6B8
+P 4700 5450
+F 0 "MP2" H 4700 5737 50  0000 C CNN
+F 1 "2242" H 4700 5646 50  0000 C CNN
+F 2 "11-My-Edits:MountingHole_NGFF_4.2mm_Pad_TopBottom" H 4700 5450 50  0001 C CNN
+F 3 "~" H 4700 5450 50  0001 C CNN
+	1    4700 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2450 4250 2750
+Wire Wire Line
+	3750 2750 4250 2750
+Connection ~ 4250 2450
+$Comp
+L power:GND #PWR0109
+U 1 1 613357F7
+P 4300 2950
+F 0 "#PWR0109" H 4300 2700 50  0001 C CNN
+F 1 "GND" V 4305 2822 50  0000 R CNN
+F 2 "" H 4300 2950 50  0001 C CNN
+F 3 "" H 4300 2950 50  0001 C CNN
+	1    4300 2950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3750 2950 4300 2950
+Wire Wire Line
+	4250 2150 4250 2450
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 6134ED31
+P 3250 5500
+F 0 "JP1" H 3250 5705 50  0000 C CNN
+F 1 "F_INS" H 3250 5614 50  0000 C CNN
+F 2 "11-My-Edits:SolderJumper-2_P0.6mm_Open_RoundedPad1.0x1.5mm" H 3250 5500 50  0001 C CNN
+F 3 "~" H 3250 5500 50  0001 C CNN
+	1    3250 5500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 61353E82
+P 3500 5500
+F 0 "#PWR0107" H 3500 5250 50  0001 C CNN
+F 1 "GND" V 3500 5350 50  0000 R CNN
+F 2 "" H 3500 5500 50  0001 C CNN
+F 3 "" H 3500 5500 50  0001 C CNN
+	1    3500 5500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7150 2750 6800 2750
+Wire Wire Line
+	6800 2650 6950 2650
+Wire Wire Line
+	6800 2450 6950 2450
+NoConn ~ 6800 3300
+NoConn ~ 6800 3400
+NoConn ~ 6800 3100
+NoConn ~ 6800 3000
+$Comp
+L Graphic:Logo_Open_Hardware_Small SYM1
+U 1 1 6139D037
+P 10900 6850
+F 0 "SYM1" H 10900 6990 50  0001 C CNN
+F 1 "logo" H 10900 6725 50  0001 C CNN
+F 2 "10-My-Footprints:neggle-logo-0.12" H 10900 6675 50  0001 C CNN
+F 3 "~" H 10930 6650 50  0001 C CNN
+	1    10900 6850
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2550 1550 4950 1550
+Wire Notes Line
+	4950 1550 4950 4950
+Wire Notes Line
+	4950 4950 2550 4950
+Wire Notes Line
+	2550 4950 2550 1550
+Text Notes 2600 4900 0    50   ~ 0
+CFexpress Media Edge Connector
+Wire Notes Line
+	7450 1550 7450 5950
+Wire Notes Line
+	7450 5950 5050 5950
+Wire Wire Line
+	6950 2450 6950 2550
+$Comp
+L power:GND #PWR?
+U 1 1 613B6B24
+P 7050 2550
+F 0 "#PWR?" H 7050 2300 50  0001 C CNN
+F 1 "GND" V 7055 2422 50  0000 R CNN
+F 2 "" H 7050 2550 50  0001 C CNN
+F 3 "" H 7050 2550 50  0001 C CNN
+	1    7050 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7050 2550 6950 2550
+Connection ~ 6950 2550
+Wire Wire Line
+	6950 2550 6950 2650
+$Comp
+L 3_SnapEDA-Edits:M.2_NGFF_KeyM_PCIe J1
+U 1 1 611199C8
+P 6250 3550
+F 0 "J1" H 5850 5050 50  0000 L CNN
+F 1 "M.2 NGFF" H 6300 5050 50  0000 L CNN
+F 2 "10-My-Footprints:AMP_MDT180xxx001_NGFF-KeyM" H 6250 3550 50  0001 L BNN
+F 3 "" H 6250 3550 50  0001 L BNN
+F 4 "MDT180M03001" H 6250 3550 50  0001 C CNN "MPN"
+	1    6250 3550
+	1    0    0    -1  
+$EndComp
+Text Label 2850 5500 0    50   ~ 0
+~INS
+Wire Wire Line
+	2850 5500 3100 5500
+Wire Wire Line
+	3400 5500 3500 5500
+Wire Notes Line
+	3950 5050 2550 5050
+Wire Notes Line
+	2550 5050 2550 5950
+Wire Notes Line
+	2550 5950 3950 5950
+Wire Notes Line
+	3950 5950 3950 5050
+Text Notes 2600 5900 0    50   ~ 0
+Insert Detect jumper\nShould not be required.
+Wire Notes Line
+	4050 5050 4050 5950
+Wire Notes Line
+	4050 5950 4950 5950
+Wire Notes Line
+	4950 5950 4950 5050
+Wire Notes Line
+	4950 5050 4050 5050
+Text Notes 4100 5900 0    50   ~ 0
+SSD hold-downs
+Text Notes 5100 5900 0    50   ~ 0
+AMP Mid-mount M key M.2 socket
+Wire Notes Line
+	7550 5950 9450 5950
+Wire Notes Line
+	9450 5950 9450 4550
+Wire Notes Line
+	9450 4550 7550 4550
+Wire Notes Line
+	7550 4550 7550 5950
+Text Notes 7600 5900 0    50   ~ 0
+M.2 power filtering
+Wire Notes Line
+	5050 1550 7450 1550
+Wire Notes Line
+	5050 5950 5050 1550
+$EndSCHEMATC
