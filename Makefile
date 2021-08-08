@@ -1,7 +1,7 @@
 .PHONY: all clean web
 
 BOARDS = cfxsx cfxsx-2280
-GITREPO = https://github.com/neg2led/cfxsx.git
+GITREPO = https://github.com/neg2led/cfxsx
 JLCFAB_IGNORE = J1,J2
 
 BOARDSFILES = $(addprefix build/, $(BOARDS:=.kicad_pcb))
