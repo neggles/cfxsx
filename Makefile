@@ -1,6 +1,6 @@
 .PHONY: all clean web
 
-BOARDS = cfxsx
+BOARDS = cfxsx cfxsx-2280
 GITREPO = https://github.com/neg2led/cfxsx.git
 JLCFAB_IGNORE = J1,J2
 
@@ -16,7 +16,13 @@ all: $(GERBERS) $(JLCGERBERS) build/web/index.html
 build/cfxsx.kicad_pcb: cfxsx/cfxsx.kicad_pcb build
 	kikit panelize extractboard -s 135 50 30 62 $< $@
 
+build/cfxsx-2280.kicad_pcb: cfxsx/cfxsx-2280.kicad_pcb build
+	kikit panelize extractboard -s 135 50 30 62 $< $@
+
 build/cfxsx.sch: cfxsx/cfxsx.kicad_pcb build
+	cp cfxsx/cfxsx.sch $@
+
+build/cfxsx-2280.sch: cfxsx/cfxsx-2280.kicad_pcb build
 	cp cfxsx/cfxsx.sch $@
 
 %-gerber: %.kicad_pcb
@@ -43,7 +49,8 @@ build/web/index.html: build/web $(BOARDSFILES)
 	kikit present boardpage \
 		-d README.md \
 		--name "CFexpress to M.2 adapter" \
-		-b "CFexpress to M.2 adapter" "Board" build/cfxsx.kicad_pcb  \
+		-b "CFexpress to M.2 2230/42" "Board" build/cfxsx.kicad_pcb  \
+		-b "CFexpress to M.2 2230/42/60/80" "Board" build/cfxsx-2280.kicad_pcb  \
 		-r "assets/cfxsx.png" \
 		-r "assets/cfxsx-bottom.png" \
 		-r "assets/cfxsx-top.png" \
